@@ -13,7 +13,7 @@
   <br />
 
   <p align="center">
-    <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/ObjectPress/object-press-minimal">
+    <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/ObjectPress/minimal-blog-starter">
       <img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">
     </a>
   </p>
