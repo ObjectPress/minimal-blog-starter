@@ -1,13 +1,13 @@
-import React from "react"
-import { motion } from "framer-motion"
-import { transition } from "./constants"
+import React from 'react';
+import { motion } from 'framer-motion';
+import { transition } from './constants';
 
 const MoonIcon = () => {
   const variants = {
     initial: { scale: 0.6, rotate: 90 },
     animate: { scale: 1, rotate: 0, transition },
     whileTap: { scale: 0.95, rotate: 15 },
-  }
+  };
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const MoonIcon = () => {
         variants={variants}
       />
     </motion.svg>
-  )
-}
+  );
+};
 
-export default MoonIcon
+export default MoonIcon;

@@ -1,14 +1,14 @@
-import React from "react"
-import Layout from "../components/layouts/Layout"
-import { Box, Text } from "@chakra-ui/react"
-import Seo from "../components/seo"
+import React from 'react';
+import Layout from '../components/layouts/Layout';
+import { Box, Text } from '@chakra-ui/react';
+import Seo from '../components/seo';
 
 const about = ({ location }) => {
   return (
-    <Layout location={location} latestPosts={true} title={"About"}>
+    <Layout location={location} latestPosts={true} title={'About'}>
       <Seo title="About" />
 
-      <Box w={{ sm: "100%", md: "95%", lg: "80%" }}>
+      <Box w={{ sm: '100%', md: '95%', lg: '80%' }}>
         <Text fontSize="24px" fontWeight="600" as="h2">
           Hello,
           <br />
@@ -43,7 +43,7 @@ const about = ({ location }) => {
         </Text>
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
-export default about
+export default about;

@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link as GatsbyLink } from "gatsby"
+import * as React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
 
-import Layout from "../components/layouts/Layout"
-import Seo from "../components/seo"
+import Layout from '../components/layouts/Layout';
+import Seo from '../components/seo';
 
 import {
   Box,
@@ -12,17 +12,17 @@ import {
   Spacer,
   Link,
   useColorModeValue,
-} from "@chakra-ui/react"
-import dayjs from "dayjs"
-import "./styles.css"
-const showdown = require("showdown")
-const converter = new showdown.Converter()
+} from '@chakra-ui/react';
+import dayjs from 'dayjs';
+import './styles.css';
+const showdown = require('showdown');
+const converter = new showdown.Converter();
 
 const BlogPostTemplate = ({ pageContext: post, location }) => {
   return (
     <Layout location={location} pb="10" latestPosts={true}>
       <Seo title={post.title} description={post.description} />
-      <Box w={{ sm: "100%", md: "95%", lg: "80%" }}>
+      <Box w={{ sm: '100%', md: '95%', lg: '80%' }}>
         <article itemScope itemType="http://schema.org/Article">
           <header>
             <Heading itemProp="headline" pt={[4, 4, 0, 0, 0]} pb="2">
@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ pageContext: post, location }) => {
             </Heading>
             <Flex>
               <Text size="md" fontWeight="medium">
-                {dayjs(post.publishAt).format("MMM DD, YYYY")}
+                {dayjs(post.publishAt).format('MMM DD, YYYY')}
               </Text>
               <Spacer />
             </Flex>
@@ -62,11 +62,11 @@ const BlogPostTemplate = ({ pageContext: post, location }) => {
               to="/blog"
               fontWeight={700}
               activeStyle={{
-                color: useColorModeValue("brandBlue", "blue.500"),
+                color: useColorModeValue('brandBlue', 'blue.500'),
               }}
               _hover={{
-                textDecoration: "none",
-                color: useColorModeValue("brandBlue", "blue.500"),
+                textDecoration: 'none',
+                color: useColorModeValue('brandBlue', 'blue.500'),
               }}
             >
               Back to Blog
@@ -75,7 +75,7 @@ const BlogPostTemplate = ({ pageContext: post, location }) => {
         </article>
       </Box>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;

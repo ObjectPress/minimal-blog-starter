@@ -1,7 +1,7 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Seo = ({ description, title }) => {
   const { site } = useStaticQuery(
@@ -15,15 +15,15 @@ const Seo = ({ description, title }) => {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaTitle = title || site.siteMetadata.title
+  const metaDescription = description || site.siteMetadata.description;
+  const metaTitle = title || site.siteMetadata.title;
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: "en",
+        lang: 'en',
       }}
     >
       <title>{metaTitle} | Object Press</title>
@@ -54,20 +54,20 @@ const Seo = ({ description, title }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://blog.objectpress.io" />
     </Helmet>
-  )
-}
+  );
+};
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;

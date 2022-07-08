@@ -1,5 +1,5 @@
-import React from "react"
-import { Link as GatsbyLink } from "gatsby"
+import React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
 import {
   Box,
   Divider,
@@ -8,19 +8,19 @@ import {
   Button,
   Link,
   useColorModeValue,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react';
 
-const Article = props => {
-  const color = useColorModeValue("blackAlpha.700", "whiteAlpha.700")
+const Article = (props) => {
+  const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700');
 
   return (
-    <Box pb="5" maxWidth={"862px"}>
+    <Box pb="5" maxWidth={'862px'}>
       <Link
         as={GatsbyLink}
         to={`/blog/${props.slug}`}
         _hover={{
-          textDecoration: "none",
-          color: useColorModeValue("brandBlue", "blue.500"),
+          textDecoration: 'none',
+          color: useColorModeValue('brandBlue', 'blue.500'),
         }}
       >
         <Heading
@@ -39,10 +39,10 @@ const Article = props => {
       <Divider
         pt="3"
         width={[
-          "100%", // 0-30em
-          "100%", // 30em-48em
-          "100%", // 48em-62em
-          "75%", // 62em+
+          '100%', // 0-30em
+          '100%', // 30em-48em
+          '100%', // 48em-62em
+          '75%', // 62em+
         ]}
       />
       <Text
@@ -51,10 +51,10 @@ const Article = props => {
         fontWeight="400"
         color={color}
         width={[
-          "100%", // 0-30em
-          "100%", // 30em-48em
-          "75%", // 48em-62em
-          "75%", // 62em+
+          '100%', // 0-30em
+          '100%', // 30em-48em
+          '75%', // 48em-62em
+          '75%', // 62em+
         ]}
       >
         {props.excerpt}
@@ -63,23 +63,23 @@ const Article = props => {
         as={GatsbyLink}
         to={`/blog/${props.slug}`}
         _hover={{
-          textDecoration: "none",
-          color: useColorModeValue("blue.500", "blue.300"),
+          textDecoration: 'none',
+          color: useColorModeValue('blue.500', 'blue.300'),
         }}
       >
         <Button
-          color={useColorModeValue("brandBlue", "blue.500")}
+          color={useColorModeValue('brandBlue', 'blue.500')}
           variant="link"
           _hover={{
-            textDecoration: "none",
-            color: useColorModeValue("blue.500", "blue.300"),
+            textDecoration: 'none',
+            color: useColorModeValue('blue.500', 'blue.300'),
           }}
         >
           Read More
         </Button>
       </Link>
     </Box>
-  )
-}
+  );
+};
 
-export default Article
+export default Article;

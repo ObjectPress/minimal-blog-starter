@@ -1,6 +1,6 @@
-import React from "react"
-import { Link as GatsbyLink } from "gatsby"
-import { useWindowSize } from "../../hooks/useWindowSize"
+import React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
+import { useWindowSize } from '../../hooks/useWindowSize';
 import {
   Flex,
   Box,
@@ -8,15 +8,15 @@ import {
   Link,
   Icon,
   useColorModeValue,
-} from "@chakra-ui/react"
-import { FaEnvelope, FaGithub } from "react-icons/fa"
-import { StaticImage } from "gatsby-plugin-image"
-import Toggle from "../ui/DarkModeToggle/Toggle"
+} from '@chakra-ui/react';
+import { FaEnvelope, FaGithub } from 'react-icons/fa';
+import { StaticImage } from 'gatsby-plugin-image';
+import Toggle from '../ui/DarkModeToggle/Toggle';
 
 const Navigation = () => {
-  const size = useWindowSize()
-  const color = useColorModeValue("blackAlpha.700", "white")
-  const border = useColorModeValue("blackAlpha.300", "whiteAlpha.300")
+  const size = useWindowSize();
+  const color = useColorModeValue('blackAlpha.700', 'white');
+  const border = useColorModeValue('blackAlpha.300', 'whiteAlpha.300');
 
   return (
     <Flex
@@ -34,9 +34,9 @@ const Navigation = () => {
         h="45px"
         w="45px"
         sx={{
-          borderRadius: "100%",
-          background: "transparent",
-          overflow: "hidden",
+          borderRadius: '100%',
+          background: 'transparent',
+          overflow: 'hidden',
         }}
       >
         <StaticImage
@@ -58,10 +58,10 @@ const Navigation = () => {
           fontSize="lg"
           fontWeight={700}
           color={color}
-          activeStyle={{ color: useColorModeValue("brandBlue", "blue.500") }}
+          activeStyle={{ color: useColorModeValue('brandBlue', 'blue.500') }}
           _hover={{
-            textDecoration: "none",
-            color: useColorModeValue("brandBlue", "blue.500"),
+            textDecoration: 'none',
+            color: useColorModeValue('brandBlue', 'blue.500'),
           }}
         >
           About
@@ -73,10 +73,10 @@ const Navigation = () => {
           fontSize="lg"
           fontWeight={700}
           color={color}
-          activeStyle={{ color: useColorModeValue("brandBlue", "blue.500") }}
+          activeStyle={{ color: useColorModeValue('brandBlue', 'blue.500') }}
           _hover={{
-            textDecoration: "none",
-            color: useColorModeValue("brandBlue", "blue.500"),
+            textDecoration: 'none',
+            color: useColorModeValue('brandBlue', 'blue.500'),
           }}
         >
           Blog
@@ -91,8 +91,8 @@ const Navigation = () => {
             color={color}
             verticalAlign="baseline"
             _hover={{
-              textDecoration: "none",
-              color: useColorModeValue("brandBlue", "blue.500"),
+              textDecoration: 'none',
+              color: useColorModeValue('brandBlue', 'blue.500'),
             }}
           />
         </Link>
@@ -106,8 +106,8 @@ const Navigation = () => {
             color={color}
             verticalAlign="baseline"
             _hover={{
-              textDecoration: "none",
-              color: useColorModeValue("brandBlue", "blue.500"),
+              textDecoration: 'none',
+              color: useColorModeValue('brandBlue', 'blue.500'),
             }}
           />
         </a>
@@ -115,7 +115,7 @@ const Navigation = () => {
         <Toggle />
       </Flex>
     </Flex>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

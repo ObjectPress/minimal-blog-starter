@@ -1,5 +1,5 @@
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   // Get all markdown blog posts sorted by date
   const { data } = await graphql(`
@@ -18,24 +18,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `)
+  `);
 
   if (data?.error) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
       data.errors
-    )
-    return
+    );
+    return;
   }
 
-  const posts = data.allPost.nodes
+  const posts = data.allPost.nodes;
 
   // Create blog posts pages
-  posts.forEach(post => {
+  posts.forEach((post) => {
     createPage({
       path: `/blog/${post.slug}`,
       component: require.resolve(`./src/templates/blog-post`),
       context: post,
-    })
-  })
-}
+    });
+  });
+};

@@ -1,11 +1,11 @@
-import React from "react"
-import { useColorMode, useColorModeValue, IconButton } from "@chakra-ui/react"
+import React from 'react';
+import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
 
-import { MoonIcon, SunIcon } from "./icons"
+import { MoonIcon, SunIcon } from './icons';
 
 const Toggle = () => {
-  const { toggleColorMode } = useColorMode()
-  const SwitchIcon = useColorModeValue(MoonIcon, SunIcon)
+  const { toggleColorMode } = useColorMode();
+  const SwitchIcon = useColorModeValue(MoonIcon, SunIcon);
   return (
     <IconButton
       fontSize="2xl"
@@ -13,12 +13,12 @@ const Toggle = () => {
       onClick={() => toggleColorMode()}
       icon={<SwitchIcon />}
       _hover={{
-        bg: "transparent",
+        bg: 'transparent',
       }}
-      _active={{ bg: "transparent" }}
-      style={{ boxShadow: "none" }}
+      _active={{ bg: 'transparent' }}
+      style={{ boxShadow: 'none' }}
     />
-  )
-}
+  );
+};
 
-export default Toggle
+export default Toggle;

@@ -1,20 +1,20 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from '@chakra-ui/react';
 
 const theme = {
   styles: {
     global: {
-      "html, body": {
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
+      'html, body': {
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
       },
     },
   },
   colors: {
-    brandBlue: "#1A389B",
+    brandBlue: '#1A389B',
   },
-  initialColorMode: "light",
+  initialColorMode: 'light',
   useSystemColorMode: true,
-}
+};
 
-export default extendTheme(theme)
+export default extendTheme(theme);

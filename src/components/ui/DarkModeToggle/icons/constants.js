@@ -1,5 +1,5 @@
 export const transition = {
-  type: "spring",
+  type: 'spring',
   stiffness: 200,
   damping: 10,
-}
+};

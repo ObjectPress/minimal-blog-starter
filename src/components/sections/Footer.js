@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link as GatsbyLink } from "gatsby"
+import * as React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
 import {
   Icon,
   Flex,
@@ -9,18 +9,18 @@ import {
   Box,
   Center,
   useColorModeValue,
-} from "@chakra-ui/react"
-import { FaGithub } from "react-icons/fa"
-import { useWindowSize } from "../../hooks/useWindowSize"
+} from '@chakra-ui/react';
+import { FaGithub } from 'react-icons/fa';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 const Footer = () => {
-  const color = useColorModeValue("blackAlpha.600", "whiteAlpha.600")
-  const size = useWindowSize()
+  const color = useColorModeValue('blackAlpha.600', 'whiteAlpha.600');
+  const size = useWindowSize();
   return (
     <Box w="100%" mx="auto" bg="blackAlpha.100">
       <Center>
         <Flex
-          flexDirection={size.width > 1024 ? "row" : "column-reverse"}
+          flexDirection={size.width > 1024 ? 'row' : 'column-reverse'}
           as="footer"
           role="contentinfo"
           minWidth="max-content"
@@ -31,16 +31,16 @@ const Footer = () => {
           justifyContent="space-between"
           px={[5, 10, 15]}
           py={{
-            base: "4",
-            md: "4",
+            base: '4',
+            md: '4',
           }}
         >
           <Link
             as={GatsbyLink}
             to="https://www.objectpress.io"
             _hover={{
-              color: useColorModeValue("brandBlue", "blue.500"),
-              textDecoration: "none",
+              color: useColorModeValue('brandBlue', 'blue.500'),
+              textDecoration: 'none',
             }}
           >
             <Text fontSize="sm" color="subtle" fontWeight="medium">
@@ -49,8 +49,8 @@ const Footer = () => {
           </Link>
           <Stack
             spacing={{
-              base: "4",
-              md: "5",
+              base: '4',
+              md: '5',
             }}
           >
             <Stack justify="space-between" direction="row" align="center">
@@ -64,7 +64,7 @@ const Footer = () => {
                     color={color}
                     verticalAlign="baseline"
                     _hover={{
-                      color: useColorModeValue("brandBlue", "blue.500"),
+                      color: useColorModeValue('brandBlue', 'blue.500'),
                     }}
                   />
                 </Link>
@@ -74,6 +74,6 @@ const Footer = () => {
         </Flex>
       </Center>
     </Box>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

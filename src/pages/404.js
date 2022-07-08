@@ -1,7 +1,7 @@
-import React from "react"
-import { Heading, Text } from "@chakra-ui/react"
-import Layout from "../components/layouts/Layout"
-import Seo from "../components/seo"
+import React from 'react';
+import { Heading, Text } from '@chakra-ui/react';
+import Layout from '../components/layouts/Layout';
+import Seo from '../components/seo';
 
 const NotFoundPage = () => (
   <Layout>
@@ -13,6 +13,6 @@ const NotFoundPage = () => (
       Unfortunately we couldn't find what you were looking for :(
     </Text>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
