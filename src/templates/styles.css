@@ -1,0 +1,71 @@
+.markdown {
+  width: 100%;
+  overflow: hidden;
+}
+
+.markdown p {
+  font-size: 1.125rem;
+  padding: 12px 0;
+}
+
+.markdown h1 {
+  font-size: 1.75rem;
+  padding: 12px 0;
+}
+
+.markdown h2 {
+  font-size: 1.5rem;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+.markdown h4 {
+  font-size: 1.125rem;
+  padding: 12px 0;
+}
+
+.markdown h5 {
+  font-size: 0.875rem;
+  padding: 12px 0;
+}
+
+.markdown h6 {
+  font-size: 0.75rem;
+  padding: 12px 0;
+}
+
+.markdown b {
+  font-weight: bold;
+}
+
+.markdown ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+.markdown li {
+  font-size: 1.125rem;
+  padding-left: 0.5em;
+  padding: 12px 0;
+}
+
+.markdown pre {
+  padding: 5px;
+  width: 100%;
+  overflow: auto;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.markdown code {
+  color: #000;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
